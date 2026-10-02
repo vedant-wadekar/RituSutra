@@ -1,0 +1,707 @@
+/* ============================================
+   SEASON PAGE — COMPLETE STYLES
+   ============================================ */
+
+.season-page {
+  min-height: 100vh;
+  background: #f7faf3;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  color: #123c2b;
+}
+
+/* ---- NAVBAR ---- */
+
+.sp-navbar {
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 6%;
+  background: rgba(255, 255, 255, 0.97);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
+  backdrop-filter: blur(10px);
+}
+
+.sp-logo {
+  font-size: 23px;
+  font-weight: 800;
+  color: #12603c;
+}
+
+.sp-nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.sp-nav-links span {
+  color: #3a5045;
+  font-weight: 500;
+  font-size: 15px;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.sp-nav-links span:hover,
+.sp-nav-links .active {
+  color: #12603c;
+  font-weight: 700;
+}
+
+.sp-back-btn {
+  padding: 9px 20px;
+  border: 1.5px solid #12603c;
+  border-radius: 8px;
+  background: transparent;
+  color: #12603c;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.sp-back-btn:hover {
+  background: #12603c;
+  color: white;
+}
+
+/* ---- HERO ---- */
+
+.sp-hero {
+  padding: 80px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 380px;
+  position: relative;
+  overflow: hidden;
+}
+
+.sp-hero-content {
+  max-width: 620px;
+  color: white;
+  position: relative;
+  z-index: 2;
+}
+
+.sp-badge {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 6px 14px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.sp-hero h1 {
+  font-size: 52px;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 10px;
+}
+
+.sp-hero-sub {
+  font-size: 16px;
+  opacity: 0.8;
+  margin-bottom: 18px;
+  font-weight: 500;
+}
+
+.sp-hero-desc {
+  font-size: 17px;
+  line-height: 1.75;
+  opacity: 0.9;
+  margin-bottom: 26px;
+  max-width: 550px;
+}
+
+.sp-dosha-badge {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  opacity: 0.95;
+}
+
+.sp-hero-emoji {
+  font-size: 140px;
+  opacity: 0.25;
+  position: absolute;
+  right: 8%;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  line-height: 1;
+}
+
+/* ---- SEASON SELECTOR ---- */
+
+.sp-selector-section {
+  padding: 70px 6%;
+  background: white;
+}
+
+.sp-selector-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.sp-selector-header h2 {
+  font-size: 36px;
+  font-weight: 800;
+  color: #145b3b;
+  margin-bottom: 8px;
+}
+
+.sp-selector-header p {
+  color: #7a8880;
+  font-size: 16px;
+}
+
+.sp-season-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 16px;
+}
+
+.sp-season-card {
+  background: #f7faf3;
+  border: 2px solid transparent;
+  border-radius: 18px;
+  padding: 24px 16px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
+  position: relative;
+}
+
+.sp-season-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.sp-season-card--active {
+  box-shadow: 0 10px 35px rgba(18, 96, 60, 0.18);
+  background: white;
+}
+
+.current-tag {
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #e39a24;
+  color: white;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 10px;
+  white-space: nowrap;
+  letter-spacing: 0.5px;
+}
+
+.sp-card-emoji {
+  font-size: 38px;
+  margin-bottom: 12px;
+}
+
+.sp-season-card h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #145b3b;
+  margin-bottom: 4px;
+}
+
+.sp-season-card > p {
+  font-size: 13px;
+  color: #7a8880;
+  margin-bottom: 4px;
+}
+
+.sp-season-card small {
+  font-size: 11.5px;
+  color: #aab5af;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.sp-dosha-tag {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* ---- DETAIL SECTION / TABS ---- */
+
+.sp-detail-section {
+  padding: 60px 6% 80px;
+  background: #f7faf3;
+}
+
+.sp-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.sp-tab {
+  padding: 11px 24px;
+  border: 1.5px solid #d5e3da;
+  border-radius: 30px;
+  background: white;
+  color: #4a6356;
+  font-size: 14.5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.sp-tab:hover {
+  border-color: #12603c;
+  color: #12603c;
+}
+
+.sp-tab--active {
+  background: #12603c;
+  border-color: #12603c;
+  color: white;
+}
+
+.sp-tab-content {
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* OVERVIEW TAB */
+
+.sp-overview-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 24px;
+  margin-bottom: 28px;
+}
+
+.sp-info-card,
+.sp-stats-card {
+  background: white;
+  border-radius: 18px;
+  padding: 32px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.sp-info-card h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #145b3b;
+  margin-bottom: 14px;
+}
+
+.sp-info-card > p {
+  font-size: 16px;
+  line-height: 1.75;
+  color: #5a6b62;
+  margin-bottom: 24px;
+}
+
+.sp-qualities h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #3a5045;
+  margin-bottom: 12px;
+  letter-spacing: 0.5px;
+}
+
+.sp-quality-chips {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.sp-quality-chip {
+  background: #eaf3e5;
+  color: #2e7d32;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 13.5px;
+  font-weight: 600;
+}
+
+.sp-stats-card {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.sp-stat {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.sp-stat-icon {
+  font-size: 24px;
+  min-width: 36px;
+}
+
+.sp-stat-label {
+  font-size: 12.5px;
+  color: #9aaa9f;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 3px;
+}
+
+.sp-stat-value {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a3828;
+}
+
+.sp-quick-tips {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.sp-quick-tip {
+  background: white;
+  border-radius: 18px;
+  padding: 28px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.sp-quick-tip.do {
+  border-top: 4px solid #27ae60;
+}
+
+.sp-quick-tip.avoid {
+  border-top: 4px solid #e74c3c;
+}
+
+.sp-quick-tip h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a3828;
+  margin-bottom: 16px;
+}
+
+.sp-quick-tip ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sp-quick-tip li {
+  font-size: 14.5px;
+  color: #5a6b62;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  padding-left: 4px;
+}
+
+/* DIET TAB */
+
+.sp-diet-header,
+.sp-lifestyle-header,
+.sp-herbs-header {
+  margin-bottom: 30px;
+}
+
+.sp-diet-header h3,
+.sp-lifestyle-header h3,
+.sp-herbs-header h3 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #145b3b;
+  margin-bottom: 8px;
+}
+
+.sp-diet-header p,
+.sp-lifestyle-header p,
+.sp-herbs-header p {
+  color: #7a8880;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.sp-diet-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.sp-diet-card {
+  background: white;
+  border-radius: 18px;
+  padding: 28px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.sp-diet-card.recommended {
+  border-top: 4px solid #27ae60;
+}
+
+.sp-diet-card.avoid {
+  border-top: 4px solid #e74c3c;
+}
+
+.sp-diet-card h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a3828;
+  margin-bottom: 18px;
+}
+
+.sp-diet-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sp-diet-card li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 15px;
+  color: #5a6b62;
+  margin-bottom: 12px;
+  line-height: 1.55;
+}
+
+.sp-check {
+  color: #27ae60;
+  font-weight: 700;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.sp-cross {
+  color: #e74c3c;
+  font-weight: 700;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+/* LIFESTYLE TAB */
+
+.sp-lifestyle-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 32px;
+}
+
+.sp-lifestyle-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: white;
+  border-radius: 14px;
+  padding: 20px 24px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s;
+}
+
+.sp-lifestyle-item:hover {
+  transform: translateX(4px);
+}
+
+.sp-lifestyle-num {
+  min-width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  color: white;
+  font-size: 14px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sp-lifestyle-item p {
+  font-size: 15.5px;
+  color: #3a5045;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* HERBS TAB */
+
+.sp-herbs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  margin-bottom: 28px;
+}
+
+.sp-herb-card {
+  background: white;
+  border-radius: 18px;
+  padding: 24px 20px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
+  transition: transform 0.25s, box-shadow 0.25s;
+  text-align: center;
+}
+
+.sp-herb-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(18, 96, 60, 0.12);
+}
+
+.sp-herb-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 16px;
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 14px;
+}
+
+.sp-herb-card h4 {
+  font-size: 17px;
+  font-weight: 700;
+  color: #145b3b;
+  margin-bottom: 8px;
+}
+
+.sp-herb-card p {
+  font-size: 14px;
+  color: #7a8880;
+  line-height: 1.6;
+}
+
+.sp-herb-note {
+  background: #fff8e1;
+  border: 1px solid #f0c040;
+  border-radius: 14px;
+  padding: 18px 22px;
+}
+
+.sp-herb-note p {
+  font-size: 14.5px;
+  color: #7a6020;
+  line-height: 1.6;
+}
+
+/* CTA */
+
+.sp-diet-cta {
+  background: linear-gradient(135deg, #eaf3e5, #d4eacc);
+  border-radius: 18px;
+  padding: 28px;
+  text-align: center;
+}
+
+.sp-diet-cta p {
+  font-size: 16px;
+  color: #3a5045;
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+.sp-cta-btn {
+  padding: 13px 28px;
+  border: none;
+  border-radius: 10px;
+  background: #12603c;
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.sp-cta-btn:hover {
+  background: #0d4d30;
+  transform: translateY(-2px);
+}
+
+/* ---- FOOTER ---- */
+
+.sp-footer {
+  background: #061f13;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.sp-footer h3 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.sp-footer p {
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+/* ---- RESPONSIVE ---- */
+
+@media (max-width: 1100px) {
+  .sp-season-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .sp-nav-links {
+    display: none;
+  }
+
+  .sp-hero h1 {
+    font-size: 38px;
+  }
+
+  .sp-hero-emoji {
+    font-size: 80px;
+    right: 4%;
+  }
+
+  .sp-overview-grid,
+  .sp-diet-grid,
+  .sp-quick-tips {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .sp-season-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sp-hero {
+    padding: 60px 6%;
+  }
+
+  .sp-hero h1 {
+    font-size: 32px;
+  }
+
+  .sp-hero-emoji {
+    display: none;
+  }
+
+  .sp-navbar {
+    padding: 0 18px;
+  }
+
+  .sp-herbs-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

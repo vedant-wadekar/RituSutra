@@ -1,0 +1,134 @@
+.signup-page {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background:
+    linear-gradient(
+      rgba(10, 91, 50, 0.92),
+      rgba(10, 91, 50, 0.92)
+    ),
+    url("../assets/images/lifestyle.jpg");
+
+  background-size: cover;
+  background-position: center;
+
+  padding: 30px;
+}
+
+.signup-card {
+  width: 100%;
+  max-width: 500px;
+
+  background: white;
+
+  padding: 45px;
+
+  border-radius: 25px;
+
+  box-shadow: 0 25px 70px rgba(0,0,0,0.2);
+}
+
+.signup-logo {
+  text-align: center;
+  font-size: 45px;
+}
+
+.signup-card h1 {
+  text-align: center;
+
+  color: #125d3a;
+
+  margin-bottom: 10px;
+}
+
+.signup-card > p {
+  text-align: center;
+
+  color: #6d7772;
+
+  margin-bottom: 30px;
+}
+
+.signup-card label {
+  display: block;
+
+  margin-top: 18px;
+  margin-bottom: 8px;
+
+  font-weight: 600;
+
+  color: #173c2d;
+}
+
+.signup-card input {
+  width: 100%;
+
+  padding: 15px;
+
+  border-radius: 10px;
+
+  border: 1px solid #d6dfda;
+
+  background: #f5f8fb;
+
+  font-size: 16px;
+}
+
+.signup-card button {
+  width: 100%;
+
+  margin-top: 28px;
+
+  padding: 16px;
+
+  border: none;
+
+  border-radius: 11px;
+
+  background: #12603c;
+
+  color: white;
+
+  font-size: 17px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+.signup-card button:hover {
+  background: #0d4d30;
+}
+
+.signup-card button:disabled {
+  opacity: 0.6;
+}
+
+.signup-error {
+  background: #ffe8e8;
+
+  color: #c62828;
+
+  border: 1px solid #ffb4b4;
+
+  padding: 12px;
+
+  border-radius: 10px;
+}
+
+.already {
+  text-align: center;
+
+  margin-top: 25px;
+}
+
+.already a {
+  color: #12603c;
+
+  font-weight: bold;
+
+  text-decoration: none;
+}

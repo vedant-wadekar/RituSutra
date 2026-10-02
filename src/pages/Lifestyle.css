@@ -1,0 +1,697 @@
+/* ============================================
+   LIFESTYLE PAGE — COMPLETE STYLES
+   ============================================ */
+
+.lifestyle-page {
+  min-height: 100vh;
+  background: #f7faf3;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  color: #123c2b;
+}
+
+/* ---- NAVBAR ---- */
+
+.lp-navbar {
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 6%;
+  background: rgba(255, 255, 255, 0.97);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
+  backdrop-filter: blur(10px);
+}
+
+.lp-logo {
+  font-size: 23px;
+  font-weight: 800;
+  color: #12603c;
+}
+
+.lp-nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.lp-nav-links span {
+  color: #3a5045;
+  font-weight: 500;
+  font-size: 15px;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.lp-nav-links span:hover,
+.lp-nav-links .active {
+  color: #12603c;
+  font-weight: 700;
+}
+
+.lp-back-btn {
+  padding: 9px 20px;
+  border: 1.5px solid #12603c;
+  border-radius: 8px;
+  background: transparent;
+  color: #12603c;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.lp-back-btn:hover {
+  background: #12603c;
+  color: white;
+}
+
+/* ---- HERO ---- */
+
+.lp-hero {
+  background: linear-gradient(135deg, #0c4c31 0%, #1a7a50 60%, #2d5a3c 100%);
+  padding: 80px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  color: white;
+  min-height: 460px;
+}
+
+.lp-hero-content {
+  max-width: 560px;
+}
+
+.lp-badge {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 6px 14px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-bottom: 22px;
+}
+
+.lp-hero h1 {
+  font-size: 54px;
+  font-weight: 800;
+  line-height: 1.08;
+  margin-bottom: 22px;
+}
+
+.lp-hero-content > p {
+  font-size: 17px;
+  line-height: 1.75;
+  opacity: 0.88;
+  margin-bottom: 30px;
+}
+
+.lp-hero-tags {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.lp-hero-tags span {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* CLOCK VISUAL */
+
+.lp-hero-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.lp-clock {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lp-clock-dot {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  left: 50%;
+  top: 50%;
+  margin-left: -18px;
+  margin-top: -18px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.3);
+}
+
+.lp-clock-center {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  color: white;
+  text-align: center;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  z-index: 2;
+}
+
+.lp-clock-center p {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-top: 2px;
+  opacity: 0.8;
+}
+
+/* ---- SEASON NOTE ---- */
+
+.lp-season-note {
+  background: #fff8e1;
+  border-bottom: 1px solid #f0c040;
+  padding: 14px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.lp-season-note span {
+  font-size: 15px;
+  color: #7a6020;
+}
+
+.lp-season-note button {
+  background: transparent;
+  border: 1px solid #c8a020;
+  color: #9a7018;
+  padding: 6px 16px;
+  border-radius: 8px;
+  font-size: 13.5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.lp-season-note button:hover {
+  background: #f0c040;
+  color: white;
+  border-color: #f0c040;
+}
+
+/* ---- SECTION HEADER ---- */
+
+.lp-section-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.lp-label {
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #e39a24;
+  margin-bottom: 12px;
+}
+
+.lp-section-header h2 {
+  font-size: 40px;
+  font-weight: 800;
+  color: #145b3b;
+  margin-bottom: 12px;
+  line-height: 1.2;
+}
+
+.lp-section-desc {
+  color: #7a8880;
+  font-size: 17px;
+  line-height: 1.7;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ---- PRINCIPLES ---- */
+
+.lp-principles {
+  padding: 90px 7%;
+  background: white;
+}
+
+.lp-principles-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.lp-principle-card {
+  background: #f7faf3;
+  border-radius: 18px;
+  padding: 28px 24px;
+  transition: transform 0.25s, box-shadow 0.25s;
+  border: 1.5px solid #e8f0eb;
+}
+
+.lp-principle-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(18, 96, 60, 0.1);
+  border-color: #c8e6c9;
+}
+
+.lp-principle-emoji {
+  font-size: 36px;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.lp-principle-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #145b3b;
+  margin-bottom: 10px;
+}
+
+.lp-principle-card p {
+  font-size: 14.5px;
+  color: #5a6b62;
+  line-height: 1.65;
+}
+
+/* ---- DINACHARYA ---- */
+
+.lp-dinacharya {
+  padding: 90px 7%;
+  background: #f7faf3;
+}
+
+.lp-dosha-filter {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.lp-dosha-btn {
+  padding: 10px 24px;
+  border: 1.5px solid #d5e0d8;
+  border-radius: 30px;
+  background: white;
+  color: #4a6356;
+  font-size: 14.5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.lp-dosha-btn:hover {
+  border-color: #12603c;
+  color: #12603c;
+}
+
+/* TIMELINE */
+
+.lp-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  position: relative;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.lp-timeline::before {
+  content: "";
+  position: absolute;
+  left: 28px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, #12603c, #e39a24, #12603c);
+  opacity: 0.3;
+}
+
+.lp-timeline-item {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 24px;
+  animation: fadeIn 0.3s ease both;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateX(-10px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.lp-timeline-dot {
+  min-width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  flex-shrink: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.lp-timeline-card {
+  flex: 1;
+  background: white;
+  border-radius: 18px;
+  padding: 28px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.25s;
+  margin-bottom: 8px;
+}
+
+.lp-timeline-card:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.lp-card-header {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.lp-time-badge {
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12.5px;
+  font-weight: 700;
+  margin-right: 8px;
+}
+
+.lp-period-badge {
+  font-size: 12px;
+  font-weight: 600;
+  color: #9aaa9f;
+  letter-spacing: 0.5px;
+}
+
+.lp-timeline-card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #145b3b;
+  margin-bottom: 10px;
+}
+
+.lp-timeline-card > p {
+  font-size: 15px;
+  color: #5a6b62;
+  line-height: 1.7;
+  margin-bottom: 18px;
+}
+
+.lp-practices h4 {
+  font-size: 13px;
+  font-weight: 700;
+  color: #9aaa9f;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.lp-practices ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.lp-practices li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14.5px;
+  color: #3a5045;
+}
+
+.lp-practice-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* ---- SEASONAL ---- */
+
+.lp-seasonal {
+  padding: 90px 7%;
+  background: #eaf3e5;
+}
+
+.lp-seasonal-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.lp-seasonal-card {
+  background: white;
+  border-radius: 18px;
+  padding: 28px 24px;
+  cursor: pointer;
+  transition: transform 0.25s, box-shadow 0.25s;
+  position: relative;
+}
+
+.lp-seasonal-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.1);
+}
+
+.lp-seasonal-card--current {
+  box-shadow: 0 8px 30px rgba(18, 96, 60, 0.16);
+}
+
+.lp-current-badge {
+  position: absolute;
+  top: -10px;
+  right: 16px;
+  background: #e39a24;
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 12px;
+  border-radius: 10px;
+}
+
+.lp-seasonal-emoji {
+  font-size: 36px;
+  margin-bottom: 14px;
+}
+
+.lp-seasonal-card h3 {
+  font-size: 19px;
+  font-weight: 700;
+  color: #145b3b;
+  margin-bottom: 4px;
+}
+
+.lp-seasonal-sub {
+  font-size: 13px;
+  color: #9aaa9f;
+  margin-bottom: 14px;
+}
+
+.lp-seasonal-tip {
+  font-size: 14.5px;
+  color: #5a6b62;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.lp-see-more {
+  background: transparent;
+  border: none;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0;
+  transition: opacity 0.2s;
+}
+
+.lp-see-more:hover {
+  opacity: 0.7;
+}
+
+/* ---- CTA SECTION ---- */
+
+.lp-cta-section {
+  padding: 90px 7%;
+  background: linear-gradient(135deg, #0c4c31, #12603c);
+  color: white;
+  text-align: center;
+}
+
+.lp-cta-content h2 {
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+.lp-cta-content p {
+  font-size: 18px;
+  opacity: 0.85;
+  line-height: 1.7;
+  max-width: 540px;
+  margin: 0 auto 36px;
+}
+
+.lp-cta-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.lp-cta-btn {
+  padding: 15px 32px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.lp-cta-btn.primary {
+  background: white;
+  color: #12603c;
+  border: none;
+}
+
+.lp-cta-btn.secondary {
+  background: transparent;
+  color: white;
+  border: 1.5px solid rgba(255, 255, 255, 0.7);
+}
+
+.lp-cta-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* ---- FOOTER ---- */
+
+.lp-footer {
+  background: #061f13;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.lp-footer h3 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.lp-footer p {
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+/* ---- RESPONSIVE ---- */
+
+@media (max-width: 1100px) {
+  .lp-principles-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .lp-seasonal-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .lp-nav-links {
+    display: none;
+  }
+
+  .lp-hero {
+    flex-direction: column;
+    padding: 60px 6%;
+    min-height: auto;
+    gap: 30px;
+  }
+
+  .lp-hero h1 {
+    font-size: 38px;
+  }
+
+  .lp-hero-visual {
+    display: none;
+  }
+
+  .lp-timeline::before {
+    display: none;
+  }
+
+  .lp-timeline-item {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .lp-timeline-dot {
+    width: 48px;
+    height: 48px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .lp-navbar {
+    padding: 0 18px;
+  }
+
+  .lp-principles,
+  .lp-dinacharya,
+  .lp-seasonal,
+  .lp-cta-section {
+    padding: 70px 5%;
+  }
+
+  .lp-principles-grid,
+  .lp-seasonal-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .lp-section-header h2 {
+    font-size: 30px;
+  }
+
+  .lp-cta-content h2 {
+    font-size: 30px;
+  }
+
+  .lp-cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,0 +1,166 @@
+.hero {
+  min-height: 100vh;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  background-image: url("/hero-ayurveda.jpg");
+  background-size: cover;
+  background-position: center;
+
+  overflow: hidden;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(4, 42, 27, 0.88) 0%,
+      rgba(4, 42, 27, 0.65) 45%,
+      rgba(4, 42, 27, 0.25) 100%
+    );
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+
+  max-width: 1200px;
+  width: 100%;
+
+  margin: auto;
+
+  padding: 140px 30px 80px;
+}
+
+.hero-tag {
+  color: #d8f3dc;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  color: white;
+
+  font-size: clamp(45px, 6vw, 78px);
+
+  line-height: 1.05;
+
+  margin: 0 0 25px;
+
+  font-weight: 800;
+
+  max-width: 750px;
+}
+
+.hero-description {
+  color: #eef8f1;
+
+  font-size: 19px;
+
+  line-height: 1.7;
+
+  max-width: 680px;
+
+  margin-bottom: 35px;
+}
+
+.hero-buttons {
+  display: flex;
+
+  gap: 15px;
+
+  flex-wrap: wrap;
+}
+
+.primary-btn,
+.secondary-btn {
+  padding: 15px 25px;
+
+  border-radius: 30px;
+
+  text-decoration: none;
+
+  font-size: 16px;
+
+  font-weight: 700;
+
+  transition: 0.3s;
+}
+
+.primary-btn {
+  background: #d9a441;
+  color: white;
+}
+
+.primary-btn:hover {
+  background: #bd8b2f;
+  transform: translateY(-3px);
+}
+
+.secondary-btn {
+  background: white;
+  color: #14532d;
+}
+
+.secondary-btn:hover {
+  background: #e9f5ed;
+  transform: translateY(-3px);
+}
+
+.hero-features {
+  display: flex;
+
+  gap: 30px;
+
+  flex-wrap: wrap;
+
+  margin-top: 45px;
+
+  color: white;
+
+  font-size: 15px;
+
+  font-weight: 600;
+}
+
+.hero-features span {
+  padding: 10px 16px;
+
+  border-radius: 25px;
+
+  background: rgba(255, 255, 255, 0.13);
+
+  backdrop-filter: blur(5px);
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 768px) {
+
+  .hero-content {
+    padding: 130px 20px 60px;
+  }
+
+  .hero h1 {
+    font-size: 45px;
+  }
+
+  .hero-description {
+    font-size: 16px;
+  }
+
+  .hero-features {
+    gap: 10px;
+  }
+}
